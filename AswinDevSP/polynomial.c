@@ -53,11 +53,6 @@ int main() {
 				k++;
 			}
 		}
-		
-		
-		
-	
-	
 	int max;
 	if(deg2 > deg1){
 		max = deg2;
@@ -68,15 +63,20 @@ int main() {
 	
 	for(int i=max; i>=0; i--) {
 		printf("%dx^%d ", c[i].coeff, i);
+		if(i !=0 ) 
+			printf("+ ");
 	}
 	
-	
-	
-
-
-
-	
-
-	
-	
 }
+
+// OUTPUT
+// Enter the max degree of poly 1: 3
+// Enter the coeff of x^0: 10 
+// Enter the coeff of x^1: 2
+// Enter the coeff of x^2: 3
+// Enter the coeff of x^3: 4
+// Enter the max degree of poly 2: 2
+// Enter the coeff of x^0: 1
+// Enter the coeff of x^1: 3 
+// Enter the coeff of x^2: 5
+// 4x^3 + 8x^2 + 5x^1 + 11x^0 
