@@ -18,13 +18,13 @@ void enqueue(int n) {
 }
 
 void dequeue() {
-	int item = q[front];
+	int item;
 	if(rear == front && rear == -1) {
 		printf("Queue is empty");
 	} else {
 		count--;
+		item = q[front]
 		printf("%d deleted \n\n", q[front]);
-		q[front] = 0;
 		if(rear == front) {
 			front = rear = -1;
 		} else {
