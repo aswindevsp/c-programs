@@ -88,15 +88,15 @@ void preOrder(struct node **node)
 {
     printf("%d ", (*node)->data);
     if ((*node)->left != NULL)
-        inOrder(&(*node)->left);
+        preOrder(&(*node)->left);
     if ((*node)->right != NULL)
-        inOrder(&(*node)->right);
+        preOrder(&(*node)->right);
 }
 
 void postOrder(struct node **node)
 {
     if ((*node)->left != NULL)
-        inOrder(&(*node)->left);
+        postOrder(&(*node)->left);
     if ((*node)->right != NULL)
         inOrder(&(*node)->right);
     printf("%d ", (*node)->data);
